@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,34 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+.container{
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(208, 255, 255);
+}
+
+.btn{
+  background-color:rgb(141, 203, 241);
+  border-radius: 20px;
+  height: 50px;
+  width: 300px;
+  margin-left: 300px;
+  color: rgb(167, 16, 16);
+}
+
+.heading{
+  text-align: center;
+  color:rgb(60, 5, 5);
+  
+}
+
+.flexdiv{
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
 }

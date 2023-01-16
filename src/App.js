@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+// import React from 'react';
+import React,{useState} from 'react';
+import Class_Component from './Handson_1/Class_Component';
+import Function_Component from './Handson_1/Function_Component'
+import './App.css'
 
-function App() {
+
+const App= () => {
+   const [fshow,fsetshow]=useState(false) 
+     const fclicked=()=>{
+      fsetshow(!fshow)
+   }
+   const [cshow,csetshow]=useState(false) 
+     const cclicked=()=>{
+      csetshow(!cshow)
+     }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container'>
+      <h2 className='heading'>Styling using Function and Class Component</h2>
+      <br/>
+      <br/>
+      <button onClick={fclicked} className='btn'>To see Styling in functional Component</button>
+      <button onClick={cclicked} className='btn'>To see Styling in functional Component</button>
+
+       <div className="flexdiv">
+        {fshow?<Function_Component/>:" "} 
+        {cshow?<Class_Component/>:" "} 
+       </div>
+
     </div>
-  );
+  )
 }
 
 export default App;
