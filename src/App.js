@@ -1,7 +1,7 @@
 // import React from 'react';
 import React,{useState} from 'react';
-import Class_Component from './Handson_1/Class_Component';
-import Function_Component from './Handson_1/Function_Component'
+import ClassComponent from './Handson_1/ClassComponent';
+import FunctionComponent from './Handson_1/FunctionComponent'
 import './App.css'
 
 
@@ -23,10 +23,13 @@ const App= () => {
       <button onClick={fclicked} className='btn'>To see Styling in functional Component</button>
       <button onClick={cclicked} className='btn'>To see Styling in functional Component</button>
 
-       <div className="flexdiv">
-        {fshow?<Function_Component/>:" "} 
-        {cshow?<Class_Component/>:" "} 
-       </div>
+      <div className="flexdiv">
+        
+            {fshow?<FunctionComponent/>:" "} 
+       
+            {cshow?<ClassComponent/>:" "}
+        
+      </div>
 
     </div>
   )
